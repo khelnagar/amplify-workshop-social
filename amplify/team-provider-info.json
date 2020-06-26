@@ -1,0 +1,26 @@
+{
+    "production": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-boyaki-production-163433-authRole",
+            "UnauthRoleArn": "arn:aws:iam::089286400144:role/amplify-boyaki-production-163433-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::089286400144:role/amplify-boyaki-production-163433-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-boyaki-production-163433-deployment",
+            "UnauthRoleName": "amplify-boyaki-production-163433-unauthRole",
+            "StackName": "amplify-boyaki-production-163433",
+            "StackId": "arn:aws:cloudformation:us-east-1:089286400144:stack/amplify-boyaki-production-163433/602c7660-b6f9-11ea-896b-0a803f1342f3",
+            "AmplifyAppId": "d140a2q3aavb6h"
+        },
+        "categories": {
+            "auth": {
+                "boyaki924cb300": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d140a2q3aavb6h",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}
