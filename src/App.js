@@ -3,7 +3,7 @@ import './App.css';
 
 import Amplify from '@aws-amplify/core';
 import PubSub from '@aws-amplify/pubsub';
-import awsmobile from './aws-exports';
+// import awsmobile from './aws-exports';
 
 import { withAuthenticator } from 'aws-amplify-react';
 
@@ -21,6 +21,7 @@ import PostsBySpecifiedUser from './containers/PostsBySpecifiedUser';
 import Timeline from './containers/Timeline';
 import Search from './containers/Search';
 
+let awsmobile = {};
 Amplify.configure(awsmobile);
 PubSub.configure(awsmobile);
 
