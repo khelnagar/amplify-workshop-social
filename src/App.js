@@ -3,7 +3,7 @@ import './App.css';
 
 import Amplify from '@aws-amplify/core';
 import PubSub from '@aws-amplify/pubsub';
-// import awsmobile from './aws-exports';
+import awsmobile from './aws-exports';
 
 import { withAuthenticator } from 'aws-amplify-react';
 
@@ -16,12 +16,11 @@ import {
 
 import { makeStyles, createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-// import AllPosts from './containers/AllPosts';
-// import PostsBySpecifiedUser from './containers/PostsBySpecifiedUser';
-// import Timeline from './containers/Timeline';
-// import Search from './containers/Search';
+import AllPosts from './containers/AllPosts';
+import PostsBySpecifiedUser from './containers/PostsBySpecifiedUser';
+import Timeline from './containers/Timeline';
+import Search from './containers/Search';
 
-let awsmobile = {};
 Amplify.configure(awsmobile);
 PubSub.configure(awsmobile);
 
@@ -91,12 +90,11 @@ function App() {
         <CssBaseline />
         <HashRouter>
           <Switch>
-            <Route exact path='/' component={Landing} />
-//             <Route exact path='/' component={Timeline} />
-//             <Route exact path='/search' component={Search} />
-//             <Route exact path='/global-timeline' component={AllPosts} />
-//             <Route exact path='/:userId' component={PostsBySpecifiedUser}/>
-//             <Redirect path="*" to="/" />
+            <Route exact path='/' component={Timeline} />
+            <Route exact path='/search' component={Search} />
+            <Route exact path='/global-timeline' component={AllPosts} />
+            <Route exact path='/:userId' component={PostsBySpecifiedUser}/>
+            <Redirect path="*" to="/" />
           </Switch>
         </HashRouter>
       </ThemeProvider>
